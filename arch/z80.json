@@ -1,12 +1,2822 @@
-{
-  "00": {
-    "mn": "NOP",
-    "oc": "00",
-    "op": "BC,&0000"
+[
+  {
+    "name": "Mnemonic",
+    "opcode": "Opcode"
   },
-  "31": {
-    "mn": "LD",
-    "oc": "31",
-    "op": "SP,&0000"
+  {
+    "name": "ADC",
+    "opcode": "8",
+    "operands": [
+      "A",
+      "(HL)"
+    ]
+  },
+  {
+    "name": "ADC",
+    "opcode": "DD 8E XX",
+    "operands": [
+      "A",
+      "(IX+N)"
+    ]
+  },
+  {
+    "name": "ADC",
+    "opcode": "FD 8E XX",
+    "operands": [
+      "A",
+      "(IY+N)"
+    ]
+  },
+  {
+    "name": "ADC",
+    "opcode": "88+r",
+    "operands": [
+      "A",
+      "r"
+    ]
+  },
+  {
+    "name": "ADC",
+    "opcode": "DD 8C",
+    "operands": [
+      "A",
+      "HX"
+    ]
+  },
+  {
+    "name": "ADC",
+    "opcode": "FD 8C",
+    "operands": [
+      "A",
+      "HY"
+    ]
+  },
+  {
+    "name": "ADC",
+    "opcode": "DD 8D",
+    "operands": [
+      "A",
+      "LX"
+    ]
+  },
+  {
+    "name": "ADC",
+    "opcode": "FD 8D",
+    "operands": [
+      "A",
+      "LY"
+    ]
+  },
+  {
+    "name": "ADC",
+    "opcode": "CE XX",
+    "operands": [
+      "A",
+      "N"
+    ]
+  },
+  {
+    "name": "ADC",
+    "opcode": "ED 4A",
+    "operands": [
+      "HL",
+      "BC"
+    ]
+  },
+  {
+    "name": "ADC",
+    "opcode": "ED 5A",
+    "operands": [
+      "HL",
+      "DE"
+    ]
+  },
+  {
+    "name": "ADC",
+    "opcode": "ED 6A",
+    "operands": [
+      "HL",
+      "HL"
+    ]
+  },
+  {
+    "name": "ADC",
+    "opcode": "ED 7A",
+    "operands": [
+      "HL",
+      "SP"
+    ]
+  },
+  {
+    "name": "ADD",
+    "opcode": "86",
+    "operands": [
+      "A",
+      "(HL)"
+    ]
+  },
+  {
+    "name": "ADD",
+    "opcode": "DD 86 XX",
+    "operands": [
+      "A",
+      "(IX+N)"
+    ]
+  },
+  {
+    "name": "ADD",
+    "opcode": "FD 86 XX",
+    "operands": [
+      "A",
+      "(IY+N)"
+    ]
+  },
+  {
+    "name": "ADD",
+    "opcode": "8r",
+    "operands": [
+      "A",
+      "r"
+    ]
+  },
+  {
+    "name": "ADD",
+    "opcode": "DD 84",
+    "operands": [
+      "A",
+      "HX"
+    ]
+  },
+  {
+    "name": "ADD",
+    "opcode": "FD 84",
+    "operands": [
+      "A",
+      "HY"
+    ]
+  },
+  {
+    "name": "ADD",
+    "opcode": "DD 85",
+    "operands": [
+      "A",
+      "LX"
+    ]
+  },
+  {
+    "name": "ADD",
+    "opcode": "FD 85",
+    "operands": [
+      "A",
+      "LY"
+    ]
+  },
+  {
+    "name": "ADD",
+    "opcode": "C6 XX",
+    "operands": [
+      "A",
+      "N"
+    ]
+  },
+  {
+    "name": "ADD",
+    "opcode": "9",
+    "operands": [
+      "HL",
+      "BC"
+    ]
+  },
+  {
+    "name": "ADD",
+    "opcode": "19",
+    "operands": [
+      "HL",
+      "DE"
+    ]
+  },
+  {
+    "name": "ADD",
+    "opcode": "29",
+    "operands": [
+      "HL",
+      "HL"
+    ]
+  },
+  {
+    "name": "ADD",
+    "opcode": "39",
+    "operands": [
+      "HL",
+      "SP"
+    ]
+  },
+  {
+    "name": "ADD",
+    "opcode": "DD 09",
+    "operands": [
+      "IX",
+      "BC"
+    ]
+  },
+  {
+    "name": "ADD",
+    "opcode": "DD 19",
+    "operands": [
+      "IX",
+      "DE"
+    ]
+  },
+  {
+    "name": "ADD",
+    "opcode": "DD 29",
+    "operands": [
+      "IX",
+      "IX"
+    ]
+  },
+  {
+    "name": "ADD",
+    "opcode": "DD 39",
+    "operands": [
+      "IX",
+      "SP"
+    ]
+  },
+  {
+    "name": "ADD",
+    "opcode": "FD 09",
+    "operands": [
+      "IY",
+      "BC"
+    ]
+  },
+  {
+    "name": "ADD",
+    "opcode": "FD 19",
+    "operands": [
+      "IY",
+      "DE"
+    ]
+  },
+  {
+    "name": "ADD",
+    "opcode": "FD 29",
+    "operands": [
+      "IY",
+      "IY"
+    ]
+  },
+  {
+    "name": "ADD",
+    "opcode": "FD 39",
+    "operands": [
+      "IY",
+      "SP"
+    ]
+  },
+  {
+    "name": "AND",
+    "opcode": "A6",
+    "operands": [
+      "(HL)"
+    ]
+  },
+  {
+    "name": "AND",
+    "opcode": "DD A6 XX",
+    "operands": [
+      "(IX+N)"
+    ]
+  },
+  {
+    "name": "AND",
+    "opcode": "FD A6 XX",
+    "operands": [
+      "(IY+N)"
+    ]
+  },
+  {
+    "name": "AND",
+    "opcode": "Ar",
+    "operands": [
+      "r"
+    ]
+  },
+  {
+    "name": "AND",
+    "opcode": "DD A4",
+    "operands": [
+      "HX"
+    ]
+  },
+  {
+    "name": "AND",
+    "opcode": "FD A4",
+    "operands": [
+      "HY"
+    ]
+  },
+  {
+    "name": "AND",
+    "opcode": "DD A5",
+    "operands": [
+      "LX"
+    ]
+  },
+  {
+    "name": "AND",
+    "opcode": "FD A5",
+    "operands": [
+      "LY"
+    ]
+  },
+  {
+    "name": "AND",
+    "opcode": "E6 XX",
+    "operands": [
+      "N"
+    ]
+  },
+  {
+    "name": "BIT",
+    "opcode": "CB 46+8*b",
+    "operands": [
+      "b",
+      "(HL)"
+    ]
+  },
+  {
+    "name": "BIT",
+    "opcode": "DD CB XX 46+8*b",
+    "operands": [
+      "b",
+      "(IX+N)"
+    ]
+  },
+  {
+    "name": "BIT",
+    "opcode": "FD CB XX 46+8*b",
+    "operands": [
+      "b",
+      "(IY+N)"
+    ]
+  },
+  {
+    "name": "BIT",
+    "opcode": "CB 4r+8*b",
+    "operands": [
+      "b",
+      "r"
+    ]
+  },
+  {
+    "name": "CALL",
+    "opcode": "DC XX XX",
+    "operands": [
+      "C",
+      "NN"
+    ]
+  },
+  {
+    "name": "CALL",
+    "opcode": "FC XX XX",
+    "operands": [
+      "M",
+      "NN"
+    ]
+  },
+  {
+    "name": "CALL",
+    "opcode": "D4 XX XX",
+    "operands": [
+      "NC",
+      "NN"
+    ]
+  },
+  {
+    "name": "CALL",
+    "opcode": "D4 XX XX",
+    "operands": [
+      "NC",
+      "NN"
+    ]
+  },
+  {
+    "name": "CALL",
+    "opcode": "CD XX XX",
+    "operands": [
+      "NN"
+    ]
+  },
+  {
+    "name": "CALL",
+    "opcode": "C4 XX XX",
+    "operands": [
+      "NZ",
+      "NN"
+    ]
+  },
+  {
+    "name": "CALL",
+    "opcode": "F4 XX XX",
+    "operands": [
+      "P",
+      "NN"
+    ]
+  },
+  {
+    "name": "CALL",
+    "opcode": "EC XX XX",
+    "operands": [
+      "PE",
+      "NN"
+    ]
+  },
+  {
+    "name": "CALL",
+    "opcode": "E4 XX XX",
+    "operands": [
+      "PO",
+      "NN"
+    ]
+  },
+  {
+    "name": "CALL",
+    "opcode": "CC XX XX",
+    "operands": [
+      "Z",
+      "NN"
+    ]
+  },
+  {
+    "name": "CCF",
+    "opcode": "3F"
+  },
+  {
+    "name": "CP",
+    "opcode": "BE",
+    "operands": [
+      "(HL)"
+    ]
+  },
+  {
+    "name": "CP",
+    "opcode": "DD BE XX",
+    "operands": [
+      "(IX+N)"
+    ]
+  },
+  {
+    "name": "CP",
+    "opcode": "FD BE XX",
+    "operands": [
+      "(IY+N)"
+    ]
+  },
+  {
+    "name": "CP",
+    "opcode": "B8+r",
+    "operands": [
+      "r"
+    ]
+  },
+  {
+    "name": "CP",
+    "opcode": "DD BC",
+    "operands": [
+      "HX"
+    ]
+  },
+  {
+    "name": "CP",
+    "opcode": "FD BC",
+    "operands": [
+      "HY"
+    ]
+  },
+  {
+    "name": "CP",
+    "opcode": "DD BD",
+    "operands": [
+      "LX"
+    ]
+  },
+  {
+    "name": "CP",
+    "opcode": "FD BD",
+    "operands": [
+      "LY"
+    ]
+  },
+  {
+    "name": "CP",
+    "opcode": "FE XX",
+    "operands": [
+      "N"
+    ]
+  },
+  {
+    "name": "CPD",
+    "opcode": "ED A9"
+  },
+  {
+    "name": "CPDR",
+    "opcode": "ED B9"
+  },
+  {
+    "name": "CPI",
+    "opcode": "ED A1"
+  },
+  {
+    "name": "CPIR",
+    "opcode": "ED B1"
+  },
+  {
+    "name": "CPL",
+    "opcode": "2F"
+  },
+  {
+    "name": "DAA",
+    "opcode": "27"
+  },
+  {
+    "name": "DEC",
+    "opcode": "35",
+    "operands": [
+      "(HL)"
+    ]
+  },
+  {
+    "name": "DEC",
+    "opcode": "DD 35 XX",
+    "operands": [
+      "(IX+N)"
+    ]
+  },
+  {
+    "name": "DEC",
+    "opcode": "FD 35 XX",
+    "operands": [
+      "(IY+N)"
+    ]
+  },
+  {
+    "name": "DEC",
+    "opcode": "3D",
+    "operands": [
+      "A"
+    ]
+  },
+  {
+    "name": "DEC",
+    "opcode": "5",
+    "operands": [
+      "B"
+    ]
+  },
+  {
+    "name": "DEC",
+    "opcode": "0B",
+    "operands": [
+      "BC"
+    ]
+  },
+  {
+    "name": "DEC",
+    "opcode": "0D",
+    "operands": [
+      "C"
+    ]
+  },
+  {
+    "name": "DEC",
+    "opcode": "15",
+    "operands": [
+      "D"
+    ]
+  },
+  {
+    "name": "DEC",
+    "opcode": "1B",
+    "operands": [
+      "DE"
+    ]
+  },
+  {
+    "name": "DEC",
+    "opcode": "1D",
+    "operands": [
+      "E"
+    ]
+  },
+  {
+    "name": "DEC",
+    "opcode": "25",
+    "operands": [
+      "H"
+    ]
+  },
+  {
+    "name": "DEC",
+    "opcode": "2B",
+    "operands": [
+      "HL"
+    ]
+  },
+  {
+    "name": "DEC",
+    "opcode": "DD 2B",
+    "operands": [
+      "IX"
+    ]
+  },
+  {
+    "name": "DEC",
+    "opcode": "FD 2B",
+    "operands": [
+      "IY"
+    ]
+  },
+  {
+    "name": "DEC",
+    "opcode": "2D",
+    "operands": [
+      "L"
+    ]
+  },
+  {
+    "name": "DEC",
+    "opcode": "3B",
+    "operands": [
+      "SP"
+    ]
+  },
+  {
+    "name": "DI",
+    "opcode": "F3"
+  },
+  {
+    "name": "DJNZ",
+    "opcode": "10 XX",
+    "operands": [
+      "$N+2"
+    ]
+  },
+  {
+    "name": "EI",
+    "opcode": "FB"
+  },
+  {
+    "name": "EX",
+    "opcode": "E3",
+    "operands": [
+      "(SP)",
+      "HL"
+    ]
+  },
+  {
+    "name": "EX",
+    "opcode": "DD E3",
+    "operands": [
+      "(SP)",
+      "IX"
+    ]
+  },
+  {
+    "name": "EX",
+    "opcode": "FD E3",
+    "operands": [
+      "(SP)",
+      "IY"
+    ]
+  },
+  {
+    "name": "EX",
+    "opcode": "8",
+    "operands": [
+      "AF",
+      "AF'"
+    ]
+  },
+  {
+    "name": "EX",
+    "opcode": "EB",
+    "operands": [
+      "DE",
+      "HL"
+    ]
+  },
+  {
+    "name": "EXX",
+    "opcode": "D9"
+  },
+  {
+    "name": "HALT",
+    "opcode": "76"
+  },
+  {
+    "name": "IM",
+    "opcode": "ED 46",
+    "operands": [
+      "0"
+    ]
+  },
+  {
+    "name": "IM",
+    "opcode": "ED 56",
+    "operands": [
+      "1"
+    ]
+  },
+  {
+    "name": "IM",
+    "opcode": "ED 5E",
+    "operands": [
+      "2"
+    ]
+  },
+  {
+    "name": "IN",
+    "opcode": "ED 78",
+    "operands": [
+      "A",
+      "(C)"
+    ]
+  },
+  {
+    "name": "IN",
+    "opcode": "DB XX",
+    "operands": [
+      "A",
+      "(N)"
+    ]
+  },
+  {
+    "name": "IN",
+    "opcode": "ED 40",
+    "operands": [
+      "B",
+      "(C)"
+    ]
+  },
+  {
+    "name": "IN",
+    "opcode": "ED 48",
+    "operands": [
+      "C",
+      "(C)"
+    ]
+  },
+  {
+    "name": "IN",
+    "opcode": "ED 50",
+    "operands": [
+      "D",
+      "(C)"
+    ]
+  },
+  {
+    "name": "IN",
+    "opcode": "ED 58",
+    "operands": [
+      "E",
+      "(C)"
+    ]
+  },
+  {
+    "name": "IN",
+    "opcode": "ED 60",
+    "operands": [
+      "H",
+      "(C)"
+    ]
+  },
+  {
+    "name": "IN",
+    "opcode": "ED 68",
+    "operands": [
+      "L",
+      "(C)"
+    ]
+  },
+  {
+    "name": "IN",
+    "opcode": "ED 70",
+    "operands": [
+      "(C)"
+    ]
+  },
+  {
+    "name": "INC",
+    "opcode": "34",
+    "operands": [
+      "(HL)"
+    ]
+  },
+  {
+    "name": "INC",
+    "opcode": "DD 34 XX",
+    "operands": [
+      "(IX+N)"
+    ]
+  },
+  {
+    "name": "INC",
+    "opcode": "FD 34 XX",
+    "operands": [
+      "(IY+N)"
+    ]
+  },
+  {
+    "name": "INC",
+    "opcode": "3C",
+    "operands": [
+      "A"
+    ]
+  },
+  {
+    "name": "INC",
+    "opcode": "4",
+    "operands": [
+      "B"
+    ]
+  },
+  {
+    "name": "INC",
+    "opcode": "3",
+    "operands": [
+      "BC"
+    ]
+  },
+  {
+    "name": "INC",
+    "opcode": "0C",
+    "operands": [
+      "C"
+    ]
+  },
+  {
+    "name": "INC",
+    "opcode": "14",
+    "operands": [
+      "D"
+    ]
+  },
+  {
+    "name": "INC",
+    "opcode": "13",
+    "operands": [
+      "DE"
+    ]
+  },
+  {
+    "name": "INC",
+    "opcode": "1C",
+    "operands": [
+      "E"
+    ]
+  },
+  {
+    "name": "INC",
+    "opcode": "24",
+    "operands": [
+      "H"
+    ]
+  },
+  {
+    "name": "INC",
+    "opcode": "23",
+    "operands": [
+      "HL"
+    ]
+  },
+  {
+    "name": "INC",
+    "opcode": "DD 24",
+    "operands": [
+      "HX"
+    ]
+  },
+  {
+    "name": "INC",
+    "opcode": "FD 24",
+    "operands": [
+      "HY"
+    ]
+  },
+  {
+    "name": "INC",
+    "opcode": "DD 23",
+    "operands": [
+      "IX"
+    ]
+  },
+  {
+    "name": "INC",
+    "opcode": "FD 23",
+    "operands": [
+      "IY"
+    ]
+  },
+  {
+    "name": "INC",
+    "opcode": "2C",
+    "operands": [
+      "L"
+    ]
+  },
+  {
+    "name": "INC",
+    "opcode": "DD 2C",
+    "operands": [
+      "LX"
+    ]
+  },
+  {
+    "name": "INC",
+    "opcode": "FD 2C",
+    "operands": [
+      "LY"
+    ]
+  },
+  {
+    "name": "INC",
+    "opcode": "33",
+    "operands": [
+      "SP"
+    ]
+  },
+  {
+    "name": "IND",
+    "opcode": "ED AA"
+  },
+  {
+    "name": "INDR",
+    "opcode": "ED BA"
+  },
+  {
+    "name": "INI",
+    "opcode": "ED A2"
+  },
+  {
+    "name": "INIR",
+    "opcode": "ED B2"
+  },
+  {
+    "name": "JP",
+    "opcode": "C3 XX XX",
+    "operands": [
+      "$NN"
+    ]
+  },
+  {
+    "name": "JP",
+    "opcode": "E9",
+    "operands": [
+      "(HL)"
+    ]
+  },
+  {
+    "name": "JP",
+    "opcode": "DD E9",
+    "operands": [
+      "(IX)"
+    ]
+  },
+  {
+    "name": "JP",
+    "opcode": "FD E9",
+    "operands": [
+      "(IY)"
+    ]
+  },
+  {
+    "name": "JP",
+    "opcode": "DA XX XX",
+    "operands": [
+      "C",
+      "$NN"
+    ]
+  },
+  {
+    "name": "JP",
+    "opcode": "FA XX XX",
+    "operands": [
+      "M",
+      "$NN"
+    ]
+  },
+  {
+    "name": "JP",
+    "opcode": "D2 XX XX",
+    "operands": [
+      "NC",
+      "$NN"
+    ]
+  },
+  {
+    "name": "JP",
+    "opcode": "C2 XX XX",
+    "operands": [
+      "NZ",
+      "$NN"
+    ]
+  },
+  {
+    "name": "JP",
+    "opcode": "F2 XX XX",
+    "operands": [
+      "P",
+      "$NN"
+    ]
+  },
+  {
+    "name": "JP",
+    "opcode": "EA XX XX",
+    "operands": [
+      "PE",
+      "$NN"
+    ]
+  },
+  {
+    "name": "JP",
+    "opcode": "E2 XX XX",
+    "operands": [
+      "PO",
+      "$NN"
+    ]
+  },
+  {
+    "name": "JP",
+    "opcode": "CA XX XX",
+    "operands": [
+      "Z",
+      "$NN"
+    ]
+  },
+  {
+    "name": "JR",
+    "opcode": "18 XX",
+    "operands": [
+      "$N+2"
+    ]
+  },
+  {
+    "name": "JR",
+    "opcode": "38 XX",
+    "operands": [
+      "C",
+      "$N+2"
+    ]
+  },
+  {
+    "name": "JR",
+    "opcode": "30 XX",
+    "operands": [
+      "NC",
+      "$N+2"
+    ]
+  },
+  {
+    "name": "JR",
+    "opcode": "20 XX",
+    "operands": [
+      "NZ",
+      "$N+2"
+    ]
+  },
+  {
+    "name": "JR",
+    "opcode": "28 XX",
+    "operands": [
+      "Z",
+      "$N+2"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "2",
+    "operands": [
+      "(BC)",
+      "A"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "12",
+    "operands": [
+      "(DE)",
+      "A"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "7r",
+    "operands": [
+      "(HL)",
+      "r"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "36 XX",
+    "operands": [
+      "(HL)",
+      "N"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "DD 7r XX",
+    "operands": [
+      "(IX+N)",
+      "r"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "DD 36 XX XX",
+    "operands": [
+      "(IX+N)",
+      "N"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "FD 7r XX",
+    "operands": [
+      "(IY+N)",
+      "r"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "FD 36 XX XX",
+    "operands": [
+      "(IY+N)",
+      "N"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "32 XX XX",
+    "operands": [
+      "(NN)",
+      "A"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "ED 43 XX XX",
+    "operands": [
+      "(NN)",
+      "BC"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "ED 53 XX XX",
+    "operands": [
+      "(NN)",
+      "DE"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "22 XX XX",
+    "operands": [
+      "(NN)",
+      "HL"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "DD 22 XX XX",
+    "operands": [
+      "(NN)",
+      "IX"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "FD 22 XX XX",
+    "operands": [
+      "(NN)",
+      "IY"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "ED 73 XX XX",
+    "operands": [
+      "(NN)",
+      "SP"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "0A",
+    "operands": [
+      "A",
+      "(BC)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "1A",
+    "operands": [
+      "A",
+      "(DE)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "7",
+    "operands": [
+      "A",
+      "(HL)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "DD 7E XX",
+    "operands": [
+      "A",
+      "(IX+N)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "FD 7E XX",
+    "operands": [
+      "A",
+      "(IY+N)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "3A XX XX",
+    "operands": [
+      "A",
+      "(NN)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "78+r",
+    "operands": [
+      "A",
+      "r"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "DD 7C",
+    "operands": [
+      "A",
+      "HX"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "FD 7C",
+    "operands": [
+      "A",
+      "HY"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "DD 7D",
+    "operands": [
+      "A",
+      "LX"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "FD 7D",
+    "operands": [
+      "A",
+      "LY"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "ED 57",
+    "operands": [
+      "A",
+      "I"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "3E XX",
+    "operands": [
+      "A",
+      "N"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "ED 5F",
+    "operands": [
+      "A",
+      "R"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "46",
+    "operands": [
+      "B",
+      "(HL)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "DD 46 XX",
+    "operands": [
+      "B",
+      "(IX+N)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "FD 46 XX",
+    "operands": [
+      "B",
+      "(IY+N)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "DD 44",
+    "operands": [
+      "B",
+      "HX"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "FD 44",
+    "operands": [
+      "B",
+      "HY"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "DD 45",
+    "operands": [
+      "B",
+      "LX"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "FD 45",
+    "operands": [
+      "B",
+      "LY"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "4r",
+    "operands": [
+      "B",
+      "r"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "06 XX",
+    "operands": [
+      "B",
+      "N"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "ED 4B XX XX",
+    "operands": [
+      "BC",
+      "(NN)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "01 XX XX",
+    "operands": [
+      "BC",
+      "NN"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "4",
+    "operands": [
+      "C",
+      "(HL)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "DD 4E XX",
+    "operands": [
+      "C",
+      "(IX+N)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "FD 4E XX",
+    "operands": [
+      "C",
+      "(IY+N)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "DD 4C",
+    "operands": [
+      "C",
+      "HX"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "FD 4C",
+    "operands": [
+      "C",
+      "HY"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "DD 4D",
+    "operands": [
+      "C",
+      "LX"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "FD 4D",
+    "operands": [
+      "C",
+      "LY"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "48+r",
+    "operands": [
+      "C",
+      "r"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "0E XX",
+    "operands": [
+      "C",
+      "N"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "56",
+    "operands": [
+      "D",
+      "(HL)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "DD 56 XX",
+    "operands": [
+      "D",
+      "(IX+N)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "FD 56 XX",
+    "operands": [
+      "D",
+      "(IY+N)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "DD 54",
+    "operands": [
+      "D",
+      "HX"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "FD 54",
+    "operands": [
+      "D",
+      "HY"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "DD 55",
+    "operands": [
+      "D",
+      "LX"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "FD 55",
+    "operands": [
+      "D",
+      "LY"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "5r",
+    "operands": [
+      "D",
+      "r"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "16 XX",
+    "operands": [
+      "D",
+      "N"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "ED 5B XX XX",
+    "operands": [
+      "DE",
+      "(NN)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "11 XX XX",
+    "operands": [
+      "DE",
+      "NN"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "5",
+    "operands": [
+      "E",
+      "(HL)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "DD 5E XX",
+    "operands": [
+      "E",
+      "(IX+N)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "FD 5E XX",
+    "operands": [
+      "E",
+      "(IY+N)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "DD 5C",
+    "operands": [
+      "E",
+      "HX"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "FD 5C",
+    "operands": [
+      "E",
+      "HY"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "DD 5D",
+    "operands": [
+      "E",
+      "LX"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "FD 5D",
+    "operands": [
+      "E",
+      "LY"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "58+r",
+    "operands": [
+      "E",
+      "r"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "1E XX",
+    "operands": [
+      "E",
+      "N"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "66",
+    "operands": [
+      "H",
+      "(HL)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "DD 66 XX",
+    "operands": [
+      "H",
+      "(IX+N)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "FD 66 XX",
+    "operands": [
+      "H",
+      "(IY+N)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "6r",
+    "operands": [
+      "H",
+      "r"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "26 XX",
+    "operands": [
+      "H",
+      "N"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "2A XX XX",
+    "operands": [
+      "HL",
+      "(NN)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "21 XX XX",
+    "operands": [
+      "HL",
+      "NN"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "DD 6r*",
+    "operands": [
+      "HX",
+      "r*"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "DD 26 XX",
+    "operands": [
+      "HX",
+      "N"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "FD 6r*",
+    "operands": [
+      "HY",
+      "r*"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "FD 26 XX",
+    "operands": [
+      "HY",
+      "N"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "ED 47",
+    "operands": [
+      "I",
+      "A"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "DD 2A XX XX",
+    "operands": [
+      "IX",
+      "(NN)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "DD 21 XX XX",
+    "operands": [
+      "IX",
+      "NN"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "FD 2A XX XX",
+    "operands": [
+      "IY",
+      "(NN)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "FD 21 XX XX",
+    "operands": [
+      "IY",
+      "NN"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "6",
+    "operands": [
+      "L",
+      "(HL)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "DD 6E XX",
+    "operands": [
+      "L",
+      "(IX+N)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "FD 6E XX",
+    "operands": [
+      "L",
+      "(IY+N)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "68+r",
+    "operands": [
+      "L",
+      "r"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "2E XX",
+    "operands": [
+      "L",
+      "N"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "DD 68+r*",
+    "operands": [
+      "LX",
+      "r*"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "FD 2E XX",
+    "operands": [
+      "LX",
+      "N"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "DD 68+r*",
+    "operands": [
+      "LY",
+      "r*"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "FD 2E XX",
+    "operands": [
+      "LY",
+      "N"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "ED 4F",
+    "operands": [
+      "R",
+      "A"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "ED 7B XX XX",
+    "operands": [
+      "SP",
+      "(NN)"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "F9",
+    "operands": [
+      "SP",
+      "HL"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "DD F9",
+    "operands": [
+      "SP",
+      "IX"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "FD F9",
+    "operands": [
+      "SP",
+      "IY"
+    ]
+  },
+  {
+    "name": "LD",
+    "opcode": "31 XX XX",
+    "operands": [
+      "SP",
+      "NN"
+    ]
+  },
+  {
+    "name": "LDD",
+    "opcode": "ED A8"
+  },
+  {
+    "name": "LDDR",
+    "opcode": "ED B8"
+  },
+  {
+    "name": "LDI",
+    "opcode": "ED A0"
+  },
+  {
+    "name": "LDIR",
+    "opcode": "ED B0"
+  },
+  {
+    "name": "NEG",
+    "opcode": "ED 44"
+  },
+  {
+    "name": "NOP",
+    "opcode": "00"
+  },
+  {
+    "name": "OR",
+    "opcode": "B6",
+    "operands": [
+      "(HL)"
+    ]
+  },
+  {
+    "name": "OR",
+    "opcode": "DD B6 XX",
+    "operands": [
+      "(IX+N)"
+    ]
+  },
+  {
+    "name": "OR",
+    "opcode": "FD B6 XX",
+    "operands": [
+      "(IY+N)"
+    ]
+  },
+  {
+    "name": "OR",
+    "opcode": "Br",
+    "operands": [
+      "r"
+    ]
+  },
+  {
+    "name": "OR",
+    "opcode": "DD B4",
+    "operands": [
+      "HX"
+    ]
+  },
+  {
+    "name": "OR",
+    "opcode": "FD B4",
+    "operands": [
+      "HY"
+    ]
+  },
+  {
+    "name": "OR",
+    "opcode": "DD B5",
+    "operands": [
+      "LX"
+    ]
+  },
+  {
+    "name": "OR",
+    "opcode": "FD B5",
+    "operands": [
+      "LY"
+    ]
+  },
+  {
+    "name": "OR",
+    "opcode": "F6 XX",
+    "operands": [
+      "N"
+    ]
+  },
+  {
+    "name": "OTDR",
+    "opcode": "ED BB"
+  },
+  {
+    "name": "OTIR",
+    "opcode": "ED B3"
+  },
+  {
+    "name": "OUT",
+    "opcode": "ED 79",
+    "operands": [
+      "(C)",
+      "A"
+    ]
+  },
+  {
+    "name": "OUT",
+    "opcode": "ED 41",
+    "operands": [
+      "(C)",
+      "B"
+    ]
+  },
+  {
+    "name": "OUT",
+    "opcode": "ED 49",
+    "operands": [
+      "(C)",
+      "C"
+    ]
+  },
+  {
+    "name": "OUT",
+    "opcode": "ED 51",
+    "operands": [
+      "(C)",
+      "D"
+    ]
+  },
+  {
+    "name": "OUT",
+    "opcode": "ED 59",
+    "operands": [
+      "(C)",
+      "E"
+    ]
+  },
+  {
+    "name": "OUT",
+    "opcode": "ED 61",
+    "operands": [
+      "(C)",
+      "H"
+    ]
+  },
+  {
+    "name": "OUT",
+    "opcode": "ED 69",
+    "operands": [
+      "(C)",
+      "L"
+    ]
+  },
+  {
+    "name": "OUT",
+    "opcode": "ED 71",
+    "operands": [
+      "(C)",
+      "0"
+    ]
+  },
+  {
+    "name": "OUT",
+    "opcode": "D3 XX",
+    "operands": [
+      "(N)",
+      "A"
+    ]
+  },
+  {
+    "name": "OUTD",
+    "opcode": "ED AB"
+  },
+  {
+    "name": "OUTI",
+    "opcode": "ED A3"
+  },
+  {
+    "name": "POP",
+    "opcode": "F1",
+    "operands": [
+      "AF"
+    ]
+  },
+  {
+    "name": "POP",
+    "opcode": "C1",
+    "operands": [
+      "BC"
+    ]
+  },
+  {
+    "name": "POP",
+    "opcode": "D1",
+    "operands": [
+      "DE"
+    ]
+  },
+  {
+    "name": "POP",
+    "opcode": "E1",
+    "operands": [
+      "HL"
+    ]
+  },
+  {
+    "name": "POP",
+    "opcode": "DD E1",
+    "operands": [
+      "IX"
+    ]
+  },
+  {
+    "name": "POP",
+    "opcode": "FD E1",
+    "operands": [
+      "IY"
+    ]
+  },
+  {
+    "name": "PUSH",
+    "opcode": "F5",
+    "operands": [
+      "AF"
+    ]
+  },
+  {
+    "name": "PUSH",
+    "opcode": "C5",
+    "operands": [
+      "BC"
+    ]
+  },
+  {
+    "name": "PUSH",
+    "opcode": "D5",
+    "operands": [
+      "DE"
+    ]
+  },
+  {
+    "name": "PUSH",
+    "opcode": "E5",
+    "operands": [
+      "HL"
+    ]
+  },
+  {
+    "name": "PUSH",
+    "opcode": "DD E5",
+    "operands": [
+      "IX"
+    ]
+  },
+  {
+    "name": "PUSH",
+    "opcode": "FD E5",
+    "operands": [
+      "IY"
+    ]
+  },
+  {
+    "name": "RES",
+    "opcode": "CB 86+8*b",
+    "operands": [
+      "b",
+      "(HL)"
+    ]
+  },
+  {
+    "name": "RES",
+    "opcode": "DD CB XX 86+8*b",
+    "operands": [
+      "b",
+      "(IX+N)"
+    ]
+  },
+  {
+    "name": "RES",
+    "opcode": "FD CB XX 86+8*b",
+    "operands": [
+      "b",
+      "(IY+N)"
+    ]
+  },
+  {
+    "name": "RES",
+    "opcode": "CB 8r+8*b",
+    "operands": [
+      "b",
+      "r"
+    ]
+  },
+  {
+    "name": "RET",
+    "opcode": "C9"
+  },
+  {
+    "name": "RET",
+    "opcode": "D8",
+    "operands": [
+      "C"
+    ]
+  },
+  {
+    "name": "RET",
+    "opcode": "F8",
+    "operands": [
+      "M"
+    ]
+  },
+  {
+    "name": "RET",
+    "opcode": "D0",
+    "operands": [
+      "NC"
+    ]
+  },
+  {
+    "name": "RET",
+    "opcode": "C0",
+    "operands": [
+      "NZ"
+    ]
+  },
+  {
+    "name": "RET",
+    "opcode": "F0",
+    "operands": [
+      "P"
+    ]
+  },
+  {
+    "name": "RET",
+    "opcode": "E8",
+    "operands": [
+      "PE"
+    ]
+  },
+  {
+    "name": "RET",
+    "opcode": "E0",
+    "operands": [
+      "PO"
+    ]
+  },
+  {
+    "name": "RET",
+    "opcode": "C8",
+    "operands": [
+      "Z"
+    ]
+  },
+  {
+    "name": "RETI",
+    "opcode": "ED 4D"
+  },
+  {
+    "name": "RETN",
+    "opcode": "ED 45"
+  },
+  {
+    "name": "RL",
+    "opcode": "CB 16",
+    "operands": [
+      "(HL)"
+    ]
+  },
+  {
+    "name": "RL",
+    "opcode": "CB 1r",
+    "operands": [
+      "r"
+    ]
+  },
+  {
+    "name": "RL",
+    "opcode": "DD CB XX 16",
+    "operands": [
+      "(IX+N)"
+    ]
+  },
+  {
+    "name": "RL",
+    "opcode": "FD CB XX 16",
+    "operands": [
+      "(IY+N)"
+    ]
+  },
+  {
+    "name": "RLA",
+    "opcode": "17"
+  },
+  {
+    "name": "RLC",
+    "opcode": "CB 06",
+    "operands": [
+      "(HL)"
+    ]
+  },
+  {
+    "name": "RLC",
+    "opcode": "DD CB XX 06",
+    "operands": [
+      "(IX+N)"
+    ]
+  },
+  {
+    "name": "RLC",
+    "opcode": "FD CB XX 06",
+    "operands": [
+      "(IY+N)"
+    ]
+  },
+  {
+    "name": "RLC",
+    "opcode": "CB 0r",
+    "operands": [
+      "r"
+    ]
+  },
+  {
+    "name": "RLCA",
+    "opcode": "7"
+  },
+  {
+    "name": "RLD",
+    "opcode": "ED 6F"
+  },
+  {
+    "name": "RR",
+    "opcode": "CB 1E",
+    "operands": [
+      "(HL)"
+    ]
+  },
+  {
+    "name": "RR",
+    "opcode": "CB 18+r",
+    "operands": [
+      "r"
+    ]
+  },
+  {
+    "name": "RR",
+    "opcode": "DD CB XX 1E",
+    "operands": [
+      "(IX+N)"
+    ]
+  },
+  {
+    "name": "RR",
+    "opcode": "FD CB XX 1E",
+    "operands": [
+      "(IY+N)"
+    ]
+  },
+  {
+    "name": "RRA",
+    "opcode": "1F"
+  },
+  {
+    "name": "RRC",
+    "opcode": "CB 0E",
+    "operands": [
+      "(HL)"
+    ]
+  },
+  {
+    "name": "RRC",
+    "opcode": "DD CB XX 0E",
+    "operands": [
+      "(IX+N)"
+    ]
+  },
+  {
+    "name": "RRC",
+    "opcode": "FD CB XX 0E",
+    "operands": [
+      "(IY+N)"
+    ]
+  },
+  {
+    "name": "RRC",
+    "opcode": "CB 08+r",
+    "operands": [
+      "r"
+    ]
+  },
+  {
+    "name": "RRCA",
+    "opcode": "0F"
+  },
+  {
+    "name": "RRD",
+    "opcode": "ED 67"
+  },
+  {
+    "name": "RST",
+    "opcode": "C7",
+    "operands": [
+      "0"
+    ]
+  },
+  {
+    "name": "RST",
+    "opcode": "CF",
+    "operands": [
+      "8H"
+    ]
+  },
+  {
+    "name": "RST",
+    "opcode": "D7",
+    "operands": [
+      "10H"
+    ]
+  },
+  {
+    "name": "RST",
+    "opcode": "DF",
+    "operands": [
+      "18H"
+    ]
+  },
+  {
+    "name": "RST",
+    "opcode": "E7",
+    "operands": [
+      "20H"
+    ]
+  },
+  {
+    "name": "RST",
+    "opcode": "EF",
+    "operands": [
+      "28H"
+    ]
+  },
+  {
+    "name": "RST",
+    "opcode": "F7",
+    "operands": [
+      "30H"
+    ]
+  },
+  {
+    "name": "RST",
+    "opcode": "FF",
+    "operands": [
+      "38H"
+    ]
+  },
+  {
+    "name": "SBC",
+    "opcode": "9",
+    "operands": [
+      "A",
+      "(HL)"
+    ]
+  },
+  {
+    "name": "SBC",
+    "opcode": "DD 9E XX",
+    "operands": [
+      "A",
+      "(IX+N)"
+    ]
+  },
+  {
+    "name": "SBC",
+    "opcode": "FD 9E XX",
+    "operands": [
+      "A",
+      "(IY+N)"
+    ]
+  },
+  {
+    "name": "SBC",
+    "opcode": "98+r",
+    "operands": [
+      "A",
+      "r"
+    ]
+  },
+  {
+    "name": "SBC",
+    "opcode": "DD 9C",
+    "operands": [
+      "HX"
+    ]
+  },
+  {
+    "name": "SBC",
+    "opcode": "FD 9C",
+    "operands": [
+      "HY"
+    ]
+  },
+  {
+    "name": "SBC",
+    "opcode": "DD 9D",
+    "operands": [
+      "LX"
+    ]
+  },
+  {
+    "name": "SBC",
+    "opcode": "FD 9D",
+    "operands": [
+      "LY"
+    ]
+  },
+  {
+    "name": "SBC",
+    "opcode": "DE XX",
+    "operands": [
+      "A",
+      "N"
+    ]
+  },
+  {
+    "name": "SBC",
+    "opcode": "ED 42",
+    "operands": [
+      "HL",
+      "BC"
+    ]
+  },
+  {
+    "name": "SBC",
+    "opcode": "ED 52",
+    "operands": [
+      "HL",
+      "DE"
+    ]
+  },
+  {
+    "name": "SBC",
+    "opcode": "ED 62",
+    "operands": [
+      "HL",
+      "HL"
+    ]
+  },
+  {
+    "name": "SBC",
+    "opcode": "ED 72",
+    "operands": [
+      "HL",
+      "SP"
+    ]
+  },
+  {
+    "name": "SCF",
+    "opcode": "37"
+  },
+  {
+    "name": "SET",
+    "opcode": "CB C6+8*b",
+    "operands": [
+      "b",
+      "(HL)"
+    ]
+  },
+  {
+    "name": "SET",
+    "opcode": "DD CB XX C6+8*b",
+    "operands": [
+      "b",
+      "(IX+N)"
+    ]
+  },
+  {
+    "name": "SET",
+    "opcode": "FD CB XX C6+8*b",
+    "operands": [
+      "b",
+      "(IY+N)"
+    ]
+  },
+  {
+    "name": "SET",
+    "opcode": "CB Cr+8*b",
+    "operands": [
+      "b",
+      "r"
+    ]
+  },
+  {
+    "name": "SLA",
+    "opcode": "CB 26",
+    "operands": [
+      "(HL)"
+    ]
+  },
+  {
+    "name": "SLA",
+    "opcode": "DD CB XX 26",
+    "operands": [
+      "(IX+N)"
+    ]
+  },
+  {
+    "name": "SLA",
+    "opcode": "FD CB XX 26",
+    "operands": [
+      "(IY+N)"
+    ]
+  },
+  {
+    "name": "SLA",
+    "opcode": "CB 2r",
+    "operands": [
+      "r"
+    ]
+  },
+  {
+    "name": "SLL",
+    "opcode": "CB 36",
+    "operands": [
+      "(HL)"
+    ]
+  },
+  {
+    "name": "SLL",
+    "opcode": "DD CB XX 36",
+    "operands": [
+      "(IX+N)"
+    ]
+  },
+  {
+    "name": "SLL",
+    "opcode": "FD CB XX 36",
+    "operands": [
+      "(IY+N)"
+    ]
+  },
+  {
+    "name": "SLL",
+    "opcode": "CB 3r",
+    "operands": [
+      "r"
+    ]
+  },
+  {
+    "name": "SRA",
+    "opcode": "CB 2E",
+    "operands": [
+      "(HL)"
+    ]
+  },
+  {
+    "name": "SRA",
+    "opcode": "DD CB XX 2E",
+    "operands": [
+      "(IX+N)"
+    ]
+  },
+  {
+    "name": "SRA",
+    "opcode": "FD CB XX 2E",
+    "operands": [
+      "(IY+N)"
+    ]
+  },
+  {
+    "name": "SRA",
+    "opcode": "CB 28+r",
+    "operands": [
+      "r"
+    ]
+  },
+  {
+    "name": "SRL",
+    "opcode": "CB 3E",
+    "operands": [
+      "(HL)"
+    ]
+  },
+  {
+    "name": "SRL",
+    "opcode": "DD CB XX 3E",
+    "operands": [
+      "(IX+N)"
+    ]
+  },
+  {
+    "name": "SRL",
+    "opcode": "FD CB XX 3E",
+    "operands": [
+      "(IY+N)"
+    ]
+  },
+  {
+    "name": "SRL",
+    "opcode": "CB 38+r",
+    "operands": [
+      "r"
+    ]
+  },
+  {
+    "name": "SUB",
+    "opcode": "96",
+    "operands": [
+      "(HL)"
+    ]
+  },
+  {
+    "name": "SUB",
+    "opcode": "DD 96 XX",
+    "operands": [
+      "(IX+N)"
+    ]
+  },
+  {
+    "name": "SUB",
+    "opcode": "FD 96 XX",
+    "operands": [
+      "(IY+N)"
+    ]
+  },
+  {
+    "name": "SUB",
+    "opcode": "9r",
+    "operands": [
+      "r"
+    ]
+  },
+  {
+    "name": "SUB",
+    "opcode": "DD 94",
+    "operands": [
+      "HX"
+    ]
+  },
+  {
+    "name": "SUB",
+    "opcode": "FD 94",
+    "operands": [
+      "HY"
+    ]
+  },
+  {
+    "name": "SUB",
+    "opcode": "DD 95",
+    "operands": [
+      "LX"
+    ]
+  },
+  {
+    "name": "SUB",
+    "opcode": "FD 95",
+    "operands": [
+      "LY"
+    ]
+  },
+  {
+    "name": "SUB",
+    "opcode": "D6 XX",
+    "operands": [
+      "N"
+    ]
+  },
+  {
+    "name": "XOR",
+    "opcode": "AE",
+    "operands": [
+      "(HL)"
+    ]
+  },
+  {
+    "name": "XOR",
+    "opcode": "DD AE XX",
+    "operands": [
+      "(IX+N)"
+    ]
+  },
+  {
+    "name": "XOR",
+    "opcode": "FD AE XX",
+    "operands": [
+      "(IY+N)"
+    ]
+  },
+  {
+    "name": "XOR",
+    "opcode": "A8+r",
+    "operands": [
+      "r"
+    ]
+  },
+  {
+    "name": "XOR",
+    "opcode": "DD AC",
+    "operands": [
+      "HX"
+    ]
+  },
+  {
+    "name": "XOR",
+    "opcode": "FD AC",
+    "operands": [
+      "HY"
+    ]
+  },
+  {
+    "name": "XOR",
+    "opcode": "DD AD",
+    "operands": [
+      "LX"
+    ]
+  },
+  {
+    "name": "XOR",
+    "opcode": "FD AD",
+    "operands": [
+      "LY"
+    ]
+  },
+  {
+    "name": "XOR",
+    "opcode": "EE XX",
+    "operands": [
+      "N"
+    ]
   }
-}
+]
